@@ -10,34 +10,48 @@ export const Demo = () => {
 
 	return (
 		<div className="container">
-			{/* <ul className="list-group">
-				{store.demo.map((item, index) => {
-					return (
-						<li
-							key={index}
-							className="list-group-item d-flex justify-content-between"
-							style={{ background: item.background }}>
-							<Link to={"/single/" + index}>
-								<span>Link to: {item.title}</span>
-							</Link>
-							{// Conditional render example
-							// Check to see if the background is orange, if so, display the message
-							item.background === "orange" ? (
-								<p style={{ color: item.initial }}>
-									Check store/flux.js scroll to the actions to see the code
-								</p>
-							) : null}
-							<button className="btn btn-success" onClick={() => actions.changeColor(index, "orange")}>
-								Change Color
-							</button>
-						</li>
-					);
-				})}
-			</ul> */}
-			<br />
+		   <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-2"></div>
+            <div class="col-lg-6 col-md-8 login-box">
+                <div class="col-lg-12 login-key">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                </div>
+                <div class="col-lg-12 login-title">
+                    LOGIN
+                </div>
+
+                <div class="col-lg-12 login-form">
+                    <div class="col-lg-12 login-form">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-control-label">USERNAME</label>
+                                <input type="text" class="form-control"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">PASSWORD</label>
+                                <input type="password" class="form-control" i/>
+                            </div>
+
+                            <div class="col-lg-12 loginbttm">
+                                <div class="col-lg-6 login-btm login-text">
+                                   
+                                </div>
+                                <div class="col-lg-6 login-btm login-button">
+                                    <button type="submit" class="btn btn-outline-primary">LOGIN</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-2"></div>
+            </div>
+        </div>
+		</div>
+			{/* <br />
 			<Link to="/">
-				<button className="btn btn-primary">Back home</button>
-			</Link>
+				<button className="home btn btn-primary">Back home</button>
+			</Link> */}
 		</div>
 	);
 };

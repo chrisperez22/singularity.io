@@ -18,8 +18,7 @@ export const Home = () => {
 			</div>
 
 
-			<div class="footer text-muted">
-			</div>
+			
 
 		</div>
 	);
